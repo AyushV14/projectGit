@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cafe Sam</title>
+    <!-- <link rel="stylesheet" href="style.css"> -->
+</head>
+<body>
+
+    <h2>Welcome to Cafe Sam!!</h2>
+    <button id="welcome" onclick="showMenu()">Enter Cafe</button>
+    <p id="whatorder"></p>
+
+    <ul id="menu" style="display: none;">
+        <h3>~Menu</h3>
+        <li>Pizza</li>
+        <li>Coffee</li>
+        <li>Burger</li>
+        <li>Tea</li>
+        <li>Milkshake</li>
+        <li>Cold drink</li>
+        <p>What would you like to order?</p>
+    </ul>
+    <form id="order" style="display: none;" onsubmit="checkOrder(event)">
+        <input type="text" name="orderdish" id="orderdish" placeholder="Enter your order">
+        <input type="submit" value="Submit">
+        <p id="writeorder"></p>
+    </form>
+
+    <p id="orderplace"></p>
+    <p id="processingorder"></p>
+    <p id="serveorder"></p>
+
+    <script src="doc.js"></script>
+</body>
+</html>
+
